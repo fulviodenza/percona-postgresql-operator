@@ -48,13 +48,13 @@ linters:
                 Use the "io" and "os" packages instead. See https://go.dev/doc/go1.16#ioutil
         not-tests:
           files:
-            - '!$test'
+            - "!$test"
           deny:
             - pkg: net/http/httptest
               desc: Should be used only in tests.
             - pkg: testing/*
               desc: The "testing" packages should be used only in tests.
-            - pkg: github.com/percona/percona-postgresql-operator/internal/testing/*
+            - pkg: github.com/fulviodenza/percona-postgresql-operator/internal/testing/*
               desc: The "internal/testing" packages should be used only in tests.
         tests:
           files:
@@ -111,7 +111,7 @@ formatters:
       sections:
         - standard
         - default
-        - prefix(github.com/percona)
+        - prefix(github.com/fulviodenza)
   exclusions:
     paths:
       - third_party$

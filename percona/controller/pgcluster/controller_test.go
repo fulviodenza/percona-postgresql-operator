@@ -27,15 +27,15 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	metricsServer "sigs.k8s.io/controller-runtime/pkg/metrics/server"
 
-	"github.com/percona/percona-postgresql-operator/internal/controller/postgrescluster"
-	internalRuntime "github.com/percona/percona-postgresql-operator/internal/controller/runtime"
-	"github.com/percona/percona-postgresql-operator/internal/feature"
-	"github.com/percona/percona-postgresql-operator/internal/naming"
-	perconaController "github.com/percona/percona-postgresql-operator/percona/controller"
-	pNaming "github.com/percona/percona-postgresql-operator/percona/naming"
-	"github.com/percona/percona-postgresql-operator/percona/runtime"
-	v2 "github.com/percona/percona-postgresql-operator/pkg/apis/pgv2.percona.com/v2"
-	"github.com/percona/percona-postgresql-operator/pkg/apis/postgres-operator.crunchydata.com/v1beta1"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/controller/postgrescluster"
+	internalRuntime "github.com/fulviodenza/percona-postgresql-operator/internal/controller/runtime"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/feature"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/naming"
+	perconaController "github.com/fulviodenza/percona-postgresql-operator/percona/controller"
+	pNaming "github.com/fulviodenza/percona-postgresql-operator/percona/naming"
+	"github.com/fulviodenza/percona-postgresql-operator/percona/runtime"
+	v2 "github.com/fulviodenza/percona-postgresql-operator/pkg/apis/pgv2.percona.com/v2"
+	"github.com/fulviodenza/percona-postgresql-operator/pkg/apis/postgres-operator.crunchydata.com/v1beta1"
 )
 
 var _ = Describe("PG Cluster", Ordered, func() {

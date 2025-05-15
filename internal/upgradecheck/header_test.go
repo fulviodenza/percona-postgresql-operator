@@ -20,12 +20,12 @@ import (
 	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
 	"k8s.io/client-go/rest"
 
-	"github.com/percona/percona-postgresql-operator/internal/controller/postgrescluster"
-	"github.com/percona/percona-postgresql-operator/internal/feature"
-	"github.com/percona/percona-postgresql-operator/internal/naming"
-	"github.com/percona/percona-postgresql-operator/internal/testing/cmp"
-	"github.com/percona/percona-postgresql-operator/internal/testing/require"
-	"github.com/percona/percona-postgresql-operator/pkg/apis/postgres-operator.crunchydata.com/v1beta1"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/controller/postgrescluster"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/feature"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/naming"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/testing/cmp"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/testing/require"
+	"github.com/fulviodenza/percona-postgresql-operator/pkg/apis/postgres-operator.crunchydata.com/v1beta1"
 )
 
 func TestGenerateHeader(t *testing.T) {

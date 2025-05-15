@@ -13,11 +13,11 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/event"
 
-	"github.com/percona/percona-postgresql-operator/internal/logging"
-	"github.com/percona/percona-postgresql-operator/internal/naming"
-	"github.com/percona/percona-postgresql-operator/percona/controller"
-	pNaming "github.com/percona/percona-postgresql-operator/percona/naming"
-	v2 "github.com/percona/percona-postgresql-operator/pkg/apis/pgv2.percona.com/v2"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/logging"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/naming"
+	"github.com/fulviodenza/percona-postgresql-operator/percona/controller"
+	pNaming "github.com/fulviodenza/percona-postgresql-operator/percona/naming"
+	v2 "github.com/fulviodenza/percona-postgresql-operator/pkg/apis/pgv2.percona.com/v2"
 )
 
 type finalizerFunc func(context.Context, *v2.PerconaPGCluster) error

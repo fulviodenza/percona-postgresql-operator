@@ -10,12 +10,12 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 
-	"github.com/percona/percona-postgresql-operator/internal/controller/postgrescluster"
-	"github.com/percona/percona-postgresql-operator/internal/logging"
-	"github.com/percona/percona-postgresql-operator/internal/naming"
-	pNaming "github.com/percona/percona-postgresql-operator/percona/naming"
-	v2 "github.com/percona/percona-postgresql-operator/pkg/apis/pgv2.percona.com/v2"
-	"github.com/percona/percona-postgresql-operator/pkg/apis/postgres-operator.crunchydata.com/v1beta1"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/controller/postgrescluster"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/logging"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/naming"
+	pNaming "github.com/fulviodenza/percona-postgresql-operator/percona/naming"
+	v2 "github.com/fulviodenza/percona-postgresql-operator/pkg/apis/pgv2.percona.com/v2"
+	"github.com/fulviodenza/percona-postgresql-operator/pkg/apis/postgres-operator.crunchydata.com/v1beta1"
 )
 
 func (r *PGClusterReconciler) reconcileScheduledBackups(ctx context.Context, cr *v2.PerconaPGCluster) error {

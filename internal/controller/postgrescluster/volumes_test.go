@@ -20,13 +20,13 @@ import (
 	"k8s.io/apimachinery/pkg/util/wait"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/percona/percona-postgresql-operator/internal/controller/runtime"
-	"github.com/percona/percona-postgresql-operator/internal/initialize"
-	"github.com/percona/percona-postgresql-operator/internal/naming"
-	"github.com/percona/percona-postgresql-operator/internal/testing/cmp"
-	"github.com/percona/percona-postgresql-operator/internal/testing/events"
-	"github.com/percona/percona-postgresql-operator/internal/testing/require"
-	"github.com/percona/percona-postgresql-operator/pkg/apis/postgres-operator.crunchydata.com/v1beta1"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/controller/runtime"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/initialize"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/naming"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/testing/cmp"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/testing/events"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/testing/require"
+	"github.com/fulviodenza/percona-postgresql-operator/pkg/apis/postgres-operator.crunchydata.com/v1beta1"
 )
 
 func TestHandlePersistentVolumeClaimError(t *testing.T) {

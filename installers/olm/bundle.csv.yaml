@@ -6,10 +6,10 @@
 apiVersion: operators.coreos.com/v1alpha1
 kind: ClusterServiceVersion
 metadata:
-  name: '' # generate.sh
+  name: "" # generate.sh
   annotations:
     support: percona.com
-    olm.properties: '[]'
+    olm.properties: "[]"
 
     # The following affect how the package is indexed at OperatorHub.io:
     # https://operatorhub.io/?category=Database
@@ -22,7 +22,7 @@ metadata:
     # The following appear on the details page at OperatorHub.io:
     # https://operatorhub.io/operator/postgresql
     createdAt: 2019-12-31 19:40Z
-    repository: https://github.com/percona/percona-postgresql-operator
+    repository: https://github.com/fulviodenza/percona-postgresql-operator
     containerImage: # kustomize config/operator
     alm-examples: |- # kustomize config/examples
 
@@ -45,7 +45,7 @@ spec:
   # The following appear on the details page at OperatorHub.io:
   # https://operatorhub.io/operator/postgresql
   description: |- # description.md
-  version: '' # generate.sh
+  version: "" # generate.sh
   links:
     - name: Percona
       url: https://www.percona.com/
@@ -60,7 +60,7 @@ spec:
   minKubeVersion: 1.23.0
   maturity: stable
   # https://github.com/operator-framework/operator-lifecycle-manager/blob/v0.18.2/doc/design/how-to-update-operators.md#replaces--channels
-  replaces: '' # generate.sh
+  replaces: "" # generate.sh
 
   # https://github.com/operator-framework/operator-lifecycle-manager/blob/v0.18.2/doc/design/building-your-csv.md#your-custom-resource-definitions
   customresourcedefinitions:
@@ -73,10 +73,10 @@ spec:
 
   # https://olm.operatorframework.io/docs/advanced-tasks/operator-scoping-with-operatorgroups/
   installModes:
-    - { type: OwnNamespace,    supported: true  }
-    - { type: SingleNamespace, supported: true  }
-    - { type: MultiNamespace,  supported: false }
-    - { type: AllNamespaces,   supported: true  }
+    - { type: OwnNamespace, supported: true }
+    - { type: SingleNamespace, supported: true }
+    - { type: MultiNamespace, supported: false }
+    - { type: AllNamespaces, supported: true }
 
   install:
     strategy: deployment

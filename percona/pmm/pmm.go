@@ -7,8 +7,8 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/util/intstr"
 
-	"github.com/percona/percona-postgresql-operator/internal/postgres"
-	v2 "github.com/percona/percona-postgresql-operator/pkg/apis/pgv2.percona.com/v2"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/postgres"
+	v2 "github.com/fulviodenza/percona-postgresql-operator/pkg/apis/pgv2.percona.com/v2"
 )
 
 const (

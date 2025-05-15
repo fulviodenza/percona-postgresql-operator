@@ -1,5 +1,5 @@
 FROM --platform=${BUILDPLATFORM} golang:1.23 AS go_builder
-WORKDIR /go/src/github.com/percona/percona-postgresql-operator
+WORKDIR /go/src/github.com/fulviodenza/percona-postgresql-operator
 
 COPY go.mod go.sum ./
 RUN go mod download

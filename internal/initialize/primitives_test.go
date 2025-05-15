@@ -9,7 +9,7 @@ import (
 
 	"gotest.tools/v3/assert"
 
-	"github.com/percona/percona-postgresql-operator/internal/initialize"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/initialize"
 )
 
 func TestBool(t *testing.T) {

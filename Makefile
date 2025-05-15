@@ -2,7 +2,7 @@ PGO_IMAGE_NAME ?= percona-postgresql-operator
 PGO_IMAGE_MAINTAINER ?= Percona
 PGO_IMAGE_SUMMARY ?= Percona PostgreSQL Operator
 PGO_IMAGE_DESCRIPTION ?= $(PGO_IMAGE_SUMMARY)
-PGO_IMAGE_URL ?= https://github.com/percona/percona-postgresql-operator
+PGO_IMAGE_URL ?= https://github.com/fulviodenza/percona-postgresql-operator
 PGO_IMAGE_PREFIX ?= localhost
 
 PGMONITOR_DIR ?= hack/tools/pgmonitor

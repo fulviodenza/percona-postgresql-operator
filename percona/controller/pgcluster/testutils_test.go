@@ -18,14 +18,14 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client/fake"
 	"sigs.k8s.io/controller-runtime/pkg/event"
 
-	"github.com/percona/percona-postgresql-operator/internal/controller/postgrescluster"
-	"github.com/percona/percona-postgresql-operator/internal/naming"
-	"github.com/percona/percona-postgresql-operator/percona/controller/pgbackup"
-	pNaming "github.com/percona/percona-postgresql-operator/percona/naming"
-	"github.com/percona/percona-postgresql-operator/percona/utils/registry"
-	"github.com/percona/percona-postgresql-operator/percona/watcher"
-	v2 "github.com/percona/percona-postgresql-operator/pkg/apis/pgv2.percona.com/v2"
-	"github.com/percona/percona-postgresql-operator/pkg/apis/postgres-operator.crunchydata.com/v1beta1"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/controller/postgrescluster"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/naming"
+	"github.com/fulviodenza/percona-postgresql-operator/percona/controller/pgbackup"
+	pNaming "github.com/fulviodenza/percona-postgresql-operator/percona/naming"
+	"github.com/fulviodenza/percona-postgresql-operator/percona/utils/registry"
+	"github.com/fulviodenza/percona-postgresql-operator/percona/watcher"
+	v2 "github.com/fulviodenza/percona-postgresql-operator/pkg/apis/pgv2.percona.com/v2"
+	"github.com/fulviodenza/percona-postgresql-operator/pkg/apis/postgres-operator.crunchydata.com/v1beta1"
 )
 
 var k8sClient client.Client

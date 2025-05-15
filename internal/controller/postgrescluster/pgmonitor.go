@@ -15,16 +15,16 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/percona/percona-postgresql-operator/internal/config"
-	"github.com/percona/percona-postgresql-operator/internal/feature"
-	"github.com/percona/percona-postgresql-operator/internal/initialize"
-	"github.com/percona/percona-postgresql-operator/internal/logging"
-	"github.com/percona/percona-postgresql-operator/internal/naming"
-	"github.com/percona/percona-postgresql-operator/internal/pgmonitor"
-	"github.com/percona/percona-postgresql-operator/internal/postgres"
-	pgpassword "github.com/percona/percona-postgresql-operator/internal/postgres/password"
-	"github.com/percona/percona-postgresql-operator/internal/util"
-	"github.com/percona/percona-postgresql-operator/pkg/apis/postgres-operator.crunchydata.com/v1beta1"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/config"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/feature"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/initialize"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/logging"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/naming"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/pgmonitor"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/postgres"
+	pgpassword "github.com/fulviodenza/percona-postgresql-operator/internal/postgres/password"
+	"github.com/fulviodenza/percona-postgresql-operator/internal/util"
+	"github.com/fulviodenza/percona-postgresql-operator/pkg/apis/postgres-operator.crunchydata.com/v1beta1"
 )
 
 // If pgMonitor is enabled the pgMonitor sidecar(s) have been added to the
