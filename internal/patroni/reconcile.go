@@ -135,7 +135,7 @@ func InstancePod(ctx context.Context,
 		ReadOnly:  true,
 	})
 
-	instanceProbes(inCluster, container)
+	// instanceProbes(inCluster, container)
 
 	// K8SPG-708
 	if inCluster.CompareVersion("2.7.0") >= 0 {

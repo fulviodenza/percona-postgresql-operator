@@ -536,6 +536,14 @@ chmod +x /tmp/pg_rewind_tde.sh
 		// - https://git.postgresql.org/gitweb/?p=postgresql.git;f=src/backend/access/transam/xlog.c;hb=REL_12_0#l5318
 		// TODO(cbandy): Remove this after 5.0 is EOL.
 		`rm -f "${postgres_data_directory}/recovery.signal"`,
+		func() string {
+			healthcheckScript := `
+until curl -k -f https://kubernetes.default.svc/healthz > /dev/null; do
+  echo "Waiting for Kubernetes API server to be ready..."
+  sleep 2
+done`
+			return healthcheckScript
+		}(),
 	}
 	script := strings.Join(filter(statements, func(s string) bool { return s != "remove" }), "\n")
 
